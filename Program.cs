@@ -24,7 +24,7 @@ namespace ZadanieSrednia
 
 
                 liczby.Add(a);
-                Console.WriteLine("count : " + liczby.Count);
+                Console.WriteLine("ilość wprowadzonych liczb : " + liczby.Count);
 
 
             } while (a != 0);
@@ -35,13 +35,13 @@ namespace ZadanieSrednia
                 foreach (var item in liczby)
                 {
                     sum += (float)item;
-                    Console.WriteLine("sum: " + sum);
-                    Console.WriteLine("zbiór" + item);
+                    //Console.WriteLine("suma liczb: " + sum); 
+                  //  Console.WriteLine("wartość wprowadzonych liczb: " + item); 
                 }
             }
 
             float srednia = sum / (liczby.Count - 1);
-            Console.WriteLine(Math.Round(srednia, 2));
+            Console.WriteLine($"Wynik Średniej to: {Math.Round(srednia, 2)}");
 
 
             Console.ReadKey();
